@@ -1,0 +1,87 @@
+.footer {
+	padding: 40px 0;
+	background: $bgFooter;
+	font-size: 0.813rem;
+	line-height: 1.6;
+	&__column {
+		max-width: 225px;
+		margin: 0 10px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__title {
+		margin-bottom: 33px;
+	}
+	&__link {
+		color: $colorFooterLink;
+	}
+	&__from {
+		&_post-title,
+		&_username,
+		&_date {
+			display: block;
+			margin-bottom: 15px;
+		}
+		&_username,
+		&_sm-text,
+		&_date {
+			font-size: 0.625rem;
+			margin-bottom: 10px;
+		}
+		&_sm-text {
+			color: #666;
+		}
+		&_text {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		padding: 6px 0 6px 9px;
+		border-bottom: 1px solid $bgBorderFooterList;
+		&:before {
+			content: '';
+			display: block;
+			@include sprite($s-footer__item);
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	
+	&__tweet-wrap {
+		margin-bottom: 25px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	&__input {
+		background: $bgFooterInput;
+		border: none;
+		margin-bottom: 10px;
+		border-radius: 10px;
+		padding: 12px 10px;
+		line-height: 1;
+		width: 100%;
+		color: $colorMain;
+		&_textarea {
+			height: 80px;
+		}
+	}
+	&__btn {
+		padding: 8px 14px;
+		background: $bgHover;
+		border-radius: 10px;
+		border: none;
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: $colorFooterBtn;
+	}
+}

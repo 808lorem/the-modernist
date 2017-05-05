@@ -1,0 +1,136 @@
+html {
+	line-height: 1;
+	font-size: 16px;
+}
+
+body {
+	font-family: $fontMain;
+	background: $bgMain;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	text-transform: uppercase;
+	color: white;
+}
+
+h1 {
+	text-transform: none;
+	font-size: 2.875rem;
+	font-weight: 400;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: 100;
+	text-transform: none;
+}
+h4 {
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+
+ul,li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+p {
+	margin: 0;
+	color: $colorMain;
+}
+
+span {
+	color: $colorMain;
+}
+
+a {
+	font-family: $fontLink;
+	color: white;
+    text-decoration: none;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+textarea {
+	resize: none;
+}
+
+section {
+	position: relative;
+}
+
+input,
+select,
+button,
+textarea {
+	outline: none;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+*::-webkit-input-placeholder {
+	opacity: 1;
+	color: $colorPlaceholder;
+}
+*:-moz-placeholder {
+	opacity: 1;
+	color: $colorPlaceholder;
+}  
+*::-moz-placeholder {
+	opacity: 1;
+	color: $colorPlaceholder;
+}
+*:-ms-input-placeholder {
+	opacity: 1;
+	color: $colorPlaceholder;
+}

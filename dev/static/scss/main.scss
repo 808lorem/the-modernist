@@ -1,0 +1,41 @@
+// Подключаем стили библиотек
+@import '_libs.scss';
+
+// Подключаем переменные
+@import '_vars.scss';
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+ @import '_sprite.scss';
+
+// Подключаем миксины
+@import '_mixins.scss';
+
+// Подключаем функции
+@import '_fun.scss';
+
+// Общие стили
+@import '_common_styles.scss';
+
+// Стили шапки
+@import 'modules/_header.scss';
+
+// Стили слайдера
+@import 'modules/_slider.scss';
+
+// Стили секции сервисы
+@import 'modules/_services.scss';
+
+// Стили секции последние работы
+@import 'modules/_latest_work.scss';
+
+// Стили главной страницы
+@import 'page/_index.scss';
+
+// Стили футера
+@import 'modules/_footer.scss';
+
+// Стили коперайта
+@import 'modules/_copyright';
+
+// Стили медиазапросов
+@import '_media.scss';

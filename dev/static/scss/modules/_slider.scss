@@ -1,0 +1,55 @@
+.slider{
+	padding-bottom: 50px;
+	background: $bgTop;
+	&__main-wrap {
+		padding: 0 63px;
+		position: relative;
+	}
+	&__arrow {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		&_prev {
+			left: 0;
+			@include sprite($s-top-slider__arrow-prev);
+		}
+		&_next {
+			right: 0;
+			@include sprite($s-top-slider__arrow-next);
+		}
+	}
+	&__wrap-text {
+		width: 313px;
+		padding: 99px 0;
+	}
+	&__wrap-img {
+		float: right;
+		margin-right: 13px;
+	}
+	&__title {
+		line-height: 1;
+		margin-bottom: 29px;
+	}
+	&__text {
+		color:  $colorMain;
+		font-size: 0.75rem;
+		font-weight: 400;
+		line-height: 1.6;
+		margin-bottom: 30px;
+	}
+	&__link {
+		color: white;
+		padding: 12px 16px;
+		background: $bgHover;
+		border-radius: 10px;
+	}
+	&__img {
+		width: 380px;
+		border-radius: 50%;
+		border: 25px solid $bgBorderWrapImg;
+		box-sizing: content-box;
+	}
+	
+}

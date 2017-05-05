@@ -1,0 +1,41 @@
+.services {
+	padding: 60px 0;
+	&__column {
+		padding: 21px 33px;
+		background: white;
+		margin: 0 10px;
+		height: 305px;
+		width: 100%;
+		max-width: 225px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			background: $bgHover;
+			.services__title,
+			.services__text {
+				color: white;
+			}
+		}
+	}
+	&__wrap-img {
+		width: 120px;
+		margin: 0 auto 17px;
+	}
+	&__title {
+		color: $colorServicesTitle;
+		text-align: center;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+	&__text {
+		color: $colorMain;
+		text-align: center;
+		font-size: 0.75rem;
+		font-weight: 400;
+		line-height: 1.4;
+	}
+}

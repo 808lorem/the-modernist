@@ -1,0 +1,10 @@
+.copyright {
+	border-top: 1px solid black;
+	background: $bgCopyright;
+	padding: 23px 0;
+	font-size: 0.813rem;
+	&__right {
+		float: right;
+		text-align: right;
+	}
+}
